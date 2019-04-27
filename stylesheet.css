@@ -1,0 +1,35 @@
+.table {
+    text-align: center;
+    border-collapse: collapse;
+    counter-reset: iterator;
+    margin: auto;
+    width: auto;
+    height: auto;
+}
+
+.table tr {
+    counter-increment: iterator;
+}
+
+.table td,
+.table tr:before {
+    padding: .1em .5em;
+    border: 1px solid #E7D5C0;
+}
+
+.table tr:before {
+    content: counter(iterator);
+    display: table-cell;
+    vertical-align: middle;
+    color: #978777
+}
+
+body {
+    background-image:url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-05.jpg);
+    background-size: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
